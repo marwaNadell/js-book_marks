@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+   <style>
+    *{font-size: 24px;}
+     .thecenter{
+
+      text-align: center;
+     }
+     table{
+       width:100%;
+       
+     }
+    
+     table button{
+
+      border: none;
+      background-color: aqua;
+      border-radius: 5px;;
+     }
+     table .redback{
+
+      background-color: rgb(255, 38, 0);
+     }
+    table tbody tr:nth-child(odd) {
+  background: rgba(189, 189, 189, 0.368)
+}
+thead{
+
+  font-family: 'Shadows Into Light', cursive;
+}
+.theform input{
+border:1px solid black;
+  margin-bottom:5px;
+  background-color: rgba(233, 247, 242, 0.442);
+  border-radius: 5px;
+}
+.bluebox{
+  background-color: rgb(0, 229, 255);
+  border:none;
+  border-radius: 3px;
+}
+.orangebox{
+  background-color: orange;
+  border:none;
+  border-radius: 3px;
+}
+a{color:antiquewhite;
+text-decoration: none;}
+#errorss{
+  color:red;
+}
+h1{
+  font-family: "tahoma";
+  text-align: center;
+}
+   </style> 
+</head>
+<body>
+  <h1>welcome in localstorage bookmars</h1>
+ <div class="thecenter">
+  <div class="theform">
+  <input type="text" id="proname" placeholder="SITE NAME"><br>
+  <input type="text" id="price" placeholder="URL"><br>
+  <button onclick="addproduct()" id="addandup" class="bluebox">ADD</button>
+  <button onclick="clearNow()">CleaR All N0W</button>
+</div>
+<div >
+  <h3 id="errorss"></h3>
+</div>
+  <table  cellspacing="0">
+ <thead>
+  <th>id</th>
+   <th>NAME_OF_SITE</th>
+   <th>THE LINK</th>
+   <th>REMOVE</th>
+   <th>UP_DATE</th>
+ </thead> 
+ <tbody id="thebodyoftable">
+   
+ </tbody>
+</table>
+
+
+
+</div>
+
+  <script src="main.js"></script>
+</body>
+</html>
